@@ -1,0 +1,125 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start" *ngIf="BackButton == 'show'">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            <div class="title-inner d-flex">
+                <ion-icon class="zmdi zmdi-home ion-text-end end" *ngIf="homeButton == 'show'" (click)="home()"></ion-icon>
+            </div>
+        </ion-title>
+    </ion-toolbar>
+    <div class="header_text">
+        <div class="img_box end animate__animated animate__fadeInUp">
+            <img src="assets/images/allow/allow_deliveryman.png">
+        </div>
+    </div>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+    <div class="form">
+        <ion-list lines="none">
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner d-flex ion-align-items-end">
+                    <ion-icon class="zmdi zmdi-account ion-text-start"></ion-icon>
+                    <div class="input_box">
+                        <ion-label>Arrozone Deliveryman</ion-label>
+                        <div class="d-flex">
+                            <ion-input type="name" value="Paul Williamson" readonly></ion-input>
+                            <ion-icon class="zmdi zmdi-phone ion-text-end end" style="color: var(--primary); top: 5px;"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner d-flex ion-align-items-end">
+                    <ion-icon class="zmdi zmdi-city-alt ion-text-start"></ion-icon>
+                    <div class="input_box">
+                        <ion-label>{{'visiting' | translate}}</ion-label>
+                        <ion-input type="text" value="A 102" readonly></ion-input>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>
+
+
+<ion-footer class="ion-no-border" *ngIf="showSection == 1">
+    <ion-button size="large" shape="block" fill="solid" mode="md" class="btn animate__animated animate__fadeInUp" (click)="showSectionButton(2)">{{'confirm_send_notification' | translate}}</ion-button>
+</ion-footer>
+
+<ion-footer class="ion-no-border status animate__animated animate__fadeInUp" *ngIf="showSection == 2">
+    <div class="container">
+        <div class="icon_box">
+            <img src="assets/images/icons/ic_ringing.png">
+            <div class="shadow">
+                <img src="assets/images/icons/ic_ringing.png">
+            </div>
+        </div>
+        <div class="text_box">
+            <h2 class="animate__animated animate__fadeInUp">{{'ringing' | translate}}...</h2>
+            <h3 class="animate__animated animate__fadeInUp">{{'they_are_getting_informed' | translate}}</h3>
+        </div>
+    </div>
+</ion-footer>
+
+<ion-footer class="ion-no-border status animate__animated animate__fadeInUp" *ngIf="showSection == 3">
+    <div class="container">
+        <div class="icon_box">
+            <img src="assets/images/icons/ic_alloewd.png">
+            <div class="shadow">
+                <img src="assets/images/icons/ic_alloewd.png">
+            </div>
+        </div>
+        <div class="text_box">
+            <h2 class="animate__animated animate__fadeInUp">{{'allowed' | translate}}</h2>
+            <h3 class="animate__animated animate__fadeInUp">{{'let_guest_enter_in_the_society' | translate}}</h3>
+        </div>
+    </div>
+</ion-footer>
+
+<ion-footer class="ion-no-border status animate__animated animate__fadeInUp" *ngIf="showSection == 4">
+    <div class="container">
+        <div class="icon_box">
+            <img src="assets/images/icons/ic_declined.png">
+            <div class="shadow">
+                <img src="assets/images/icons/ic_declined.png">
+            </div>
+        </div>
+        <div class="text_box">
+            <h2 class="animate__animated animate__fadeInUp">{{'declined_entry' | translate}}</h2>
+            <h3 class="animate__animated animate__fadeInUp">{{'deliveryman_entry_has_been_declined' | translate}}</h3>
+        </div>
+    </div>
+</ion-footer>
+
+<ion-footer class="ion-no-border status animate__animated animate__fadeInUp" *ngIf="showSection == 5">
+    <div class="container">
+        <div class="icon_box">
+            <img src="assets/images/icons/ic_not_responded.png">
+            <div class="shadow">
+                <img src="assets/images/icons/ic_not_responded.png">
+            </div>
+        </div>
+        <div class="text_box">
+            <h2 class="animate__animated animate__fadeInUp">{{'not_responded' | translate}}</h2>
+            <h3 class="animate__animated animate__fadeInUp">{{'resident_not_responded' | translate}}</h3>
+        </div>
+
+        <ion-row>
+            <ion-col size="6">
+                <ion-button size="large" shape="block" fill="solid" mode="md" class="btn animate__animated animate__fadeInUp">
+                    <ion-icon class="zmdi zmdi-phone ion-text-start"></ion-icon>
+                    {{'call' | translate}}
+                </ion-button>
+            </ion-col>
+            <ion-col size="6">
+                <ion-button size="large" shape="block" fill="solid" mode="md" class="btn allow animate__animated animate__fadeInUp" (click)="home()">
+                    <ion-icon class="zmdi zmdi-check ion-text-start"></ion-icon>
+                    {{'allow' | translate}}
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-footer>

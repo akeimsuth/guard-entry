@@ -1,0 +1,189 @@
+ion-header {
+    background: var(--bg-black);
+    ion-toolbar {
+        --background: var(--bg-black);
+        ion-title {
+            padding: 0 30px !important;
+            .title-inner {
+                min-height: 70px;
+                position: relative;
+                .watermark {
+                    width: fit-content;
+                    margin: auto;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    top: -5px;
+                    height: fit-content;
+                    img {
+                        display: block;
+                        margin: auto;
+                        width: 105px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ion-content {
+    --background: var(--bg-black);
+}
+
+.img_container {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin: 50px auto 40px auto;
+    position: relative;
+    .img_box {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        display: block;
+    }
+    ion-icon {
+        color: var(--white);
+        background: var(--primary);
+        width: 57px;
+        height: 57px;
+        line-height: 57px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 1.6rem;
+        position: absolute;
+        top: 0;
+        right: -28px;
+        bottom: 0;
+        margin: auto 0;
+    }
+}
+
+.text_box {
+    margin: 0 auto;
+    width: calc(100% - 50px);
+    padding-bottom: 40px;
+    h2 {
+        margin: 0;
+        color: var(--white);
+        font-size: 1.45rem;
+        padding-bottom: 13px;
+    }
+    h3 {
+        color: var(--text-light3);
+        margin: 0;
+        font-size: 0.95rem;
+        letter-spacing: .5px;
+    }
+}
+
+.send_a_message {
+    margin: 0 auto;
+    width: calc(100% - 50px);
+    padding-bottom: 40px;
+    h2 {
+        color: var(--text-light);
+        margin: 0;
+        font-size: 0.8rem;
+        padding: 15px 0;
+    }
+    p {
+        margin: 0;
+        color: var(--white);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+
+ion-row {
+    margin: 0 auto;
+    width: calc(100% - 30px);
+    padding: 40px 0;
+    ion-col {
+        padding: 0;
+        ion-icon {
+            color: var(--white);
+            background: #23282e;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            font-size: 1.7rem;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 18px;
+            &.zmdi-close {
+                background: #c62729;
+            }
+        }
+        h3 {
+            color: var(--text-light3);
+            margin: 0;
+            font-size: .95rem;
+        }
+    }
+}
+
+.swipeButton {
+    width: 100%;
+    max-width: calc(100% - 100px);
+    background: #23282e;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 40px;
+    height: 71px;
+    .swipeThumb {
+        width: 100px;
+        height: 55px;
+        background: #2ba41e;
+        border-radius: 50px;
+        position: relative;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 8px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        span {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            margin: auto;
+            ion-icon {
+                color: var(--white);
+                text-align: center;
+                font-size: 1.8rem;
+                width: 15px;
+                &:nth-child(1) {
+                    opacity: 1;
+                }
+                &:nth-child(2) {
+                    opacity: .5;
+                }
+                &:nth-child(3) {
+                    opacity: .3;
+                }
+            }
+        }
+    }
+    h3 {
+        background: #7C8087;
+        background: linear-gradient(to right, #7C8087 36%, #3D4147 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        position: absolute;
+        right: 29px;
+        top: 0;
+        bottom: 0;
+        font-size: 1.05rem;
+        margin: auto 0;
+        height: fit-content;
+    }
+}

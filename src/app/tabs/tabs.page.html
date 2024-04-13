@@ -1,0 +1,35 @@
+<ion-tabs>
+    <ion-tab-bar slot="top">
+        <h2 class="d-flex">
+            <span> Gate A</span>
+            <ion-icon class="zmdi zmdi-more-vert end" (click)="showOptions()"></ion-icon>
+        </h2>
+        <ion-row>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-tab-button tab="home">
+                    <ion-icon class="zmdi zmdi-home"></ion-icon>
+                    <ion-label>{{'home' | translate}}</ion-label>
+                </ion-tab-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-tab-button tab="in_out">
+                    <ion-icon class="zmdi zmdi-swap-vertical-circle"></ion-icon>
+                    <ion-label>{{'in_out' | translate}}</ion-label>
+                </ion-tab-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-tab-button tab="recentMessages">
+                    <ion-icon class="zmdi zmdi-email" style="font-size: 2.1rem;"></ion-icon>
+                    <ion-label>{{'message' | translate}}</ion-label>
+                </ion-tab-button>
+            </ion-col>
+        </ion-row>
+    </ion-tab-bar>
+</ion-tabs>
+
+<div class="more_options" [ngClass]="toggleClass ? 'active' : '' " (click)="showOptions()">
+    <div class="option_container">
+        <h2 (click)="myProfile()">{{'my_profile' | translate}}</h2>
+        <h2 (click)="changeLanguage()">{{'change_lanhuage' | translate}}</h2>
+    </div>
+</div>

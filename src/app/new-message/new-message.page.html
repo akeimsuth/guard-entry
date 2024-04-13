@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            <div class="title-inner d-flex">
+                <div class="watermark animate__animated animate__fadeInUp ">
+                    <img src="assets/images/logo.png">
+                </div>
+            </div>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+    <div class="img_container">
+        <div class="img_box center_img animate__animated animate__zoomIn">
+            <img src="assets/images/avatars/img14.jpg" class="crop_img">
+        </div>
+        <ion-icon class="zmdi zmdi-phone"></ion-icon>
+    </div>
+
+
+    <div class="text_box ion-text-center animate__animated animate__fadeInUp">
+        <h2>Bruno Stevenson</h2>
+        <h3>Flat A 203</h3>
+    </div>
+
+    <div class="send_a_message ion-text-center">
+        <h2>{{"send_a_message" | translate}}</h2>
+        <p>Keep kids away from <br> Cars in Parking..</p>
+        <h2>2 m ago</h2>
+    </div>
+
+
+    <div class="swipeButton animate__animated animate__zoomIn" #swipeButton>
+        <div class="swipeThumb" #swipeThumb>
+            <span>
+        <ion-icon class="zmdi zmdi-chevron-right"></ion-icon>
+        <ion-icon class="zmdi zmdi-chevron-right"></ion-icon>
+        <ion-icon class="zmdi zmdi-chevron-right"></ion-icon>
+      </span>
+        </div>
+        <h3>{{"mark_as_read" | translate}}</h3>
+    </div>
+
+</ion-content>

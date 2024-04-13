@@ -1,0 +1,42 @@
+.form {
+    padding-top: 15px;
+    .profile_img {
+        position: relative;
+        width: fit-content;
+        margin-bottom: 30px;
+        .img_box {
+            min-width: 90px;
+            height: 90px;
+            width: fit-content;
+            border-radius: 50%;
+        }
+        ion-icon {
+            position: absolute;
+            top: 0;
+            right: -6px;
+            background: var(--bg-black);
+            color: var(--text-white);
+            min-width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+h3 {
+    margin: 0;
+    padding-top: 35px;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    line-height: 26px;
+    span {
+        color: var(--bg-black);
+    }
+}
+
+ion-footer {
+    padding: 20px 20px 30px 20px;
+}

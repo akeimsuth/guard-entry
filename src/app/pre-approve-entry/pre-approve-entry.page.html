@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            <div class="title-inner d-flex">
+                <!-- <ion-icon class="zmdi zmdi-home ion-text-end end" *ngIf="homeButton == 'show'" (click)="home()"></ion-icon> -->
+            </div>
+        </ion-title>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+    <div class="form">
+        <div class="img_box animate__animated animate__zoomIn center_img">
+            <img src="assets/images/avatars/img14.jpg" class="crop_img">
+        </div>
+
+        <ion-list lines="none">
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner d-flex ion-align-items-end">
+                    <ion-icon class="zmdi zmdi-account ion-text-start"></ion-icon>
+                    <div class="input_box">
+                        <ion-label>{{'guest' | translate}}</ion-label>
+                        <div class="d-flex">
+                            <ion-input type="name" value="George Smith" readonly></ion-input>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner d-flex ion-align-items-end">
+                    <ion-icon class="zmdi zmdi-city-alt ion-text-start"></ion-icon>
+                    <div class="input_box">
+                        <ion-label>{{'visiting' | translate}}</ion-label>
+                        <ion-input type="text" value="A 102" readonly></ion-input>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner d-flex ion-align-items-end">
+                    <ion-icon class="zmdi zmdi-city-alt ion-text-start"></ion-icon>
+                    <div class="input_box">
+                        <ion-label>{{'gate_pass' | translate}}</ion-label>
+                        <ion-input type="text" value="#254126" readonly></ion-input>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>
+
+
+<ion-footer class="ion-no-border">
+    <ion-button size="large" shape="block" fill="solid" mode="md" class="btn animate__animated animate__fadeInUp" (click)="tabs()">{{'confirm_send_in' | translate}}</ion-button>
+</ion-footer>

@@ -1,0 +1,89 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+
+    <div class="header_text d-flex">
+        <h1 class="animate__animated animate__fadeInUp">
+            {{"cab_entry" | translate}}
+        </h1>
+
+
+        <div class="profile_img end">
+            <div class="img_box center_img">
+                <img src="assets/images/profile_placeholder.png" class="crop_img">
+                <img src="assets/images/profile_placeholder.png" class="crop_img">
+            </div>
+            <ion-icon class="zmdi zmdi-camera"></ion-icon>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+    <div class="form">
+        <ion-list lines="none">
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner">
+                    <ion-label>{{'last_4_digit_of_cab' | translate}}</ion-label>
+                    <div class="input_box d-flex">
+                        <ion-input type="text" value="4425"></ion-input>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner">
+                    <ion-label>{{'company_name' | translate}}</ion-label>
+                    <div class="input_box d-flex">
+                        <ion-input type="text" value="Olas Cab"></ion-input>
+                    </div>
+                </div>
+            </ion-item>
+
+
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner">
+                    <ion-label mode="md">{{"building" | translate}}</ion-label>
+                    <div class="input_box d-flex">
+                        <ion-select mode="md" placeholder="{{'building' | translate}}" [(ngModel)]="building" cancelText="{{'cancel' | translate}}" okText="{{'ok' | translate}}">
+                            <ion-select-option value="1">A Wing</ion-select-option>
+                            <ion-select-option value="2">B Wing</ion-select-option>
+                            <ion-select-option value="3">C Wing</ion-select-option>
+                            <ion-select-option value="4">D Wing</ion-select-option>
+                            <ion-select-option value="5">E Wing</ion-select-option>
+                            <ion-select-option value="6">F Wing</ion-select-option>
+                            <ion-select-option value="7">G Wing</ion-select-option>
+                        </ion-select>
+                        <ion-icon class="zmdi zmdi-caret-down  ion-text-end end"></ion-icon>
+                    </div>
+                </div>
+            </ion-item>
+
+
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner">
+                    <ion-label mode="md">{{"flat_number" | translate}}</ion-label>
+                    <div class="input_box d-flex">
+                        <ion-select mode="md" placeholder="{{'flat_number' | translate}}" [(ngModel)]="flat_number" cancelText="{{'cancel' | translate}}" okText="{{'ok' | translate}}">
+                            <ion-select-option value="1">101</ion-select-option>
+                            <ion-select-option value="2">102</ion-select-option>
+                            <ion-select-option value="3">103</ion-select-option>
+                            <ion-select-option value="4">104</ion-select-option>
+                            <ion-select-option value="5">105</ion-select-option>
+                            <ion-select-option value="6">106</ion-select-option>
+                            <ion-select-option value="7">107</ion-select-option>
+                        </ion-select>
+                        <ion-icon class="zmdi zmdi-caret-down  ion-text-end end"></ion-icon>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>
+
+
+<ion-footer class="ion-no-border">
+    <ion-button size="large" shape="block" fill="solid" mode="md" class="btn animate__animated animate__fadeInUp">{{'continue' | translate}}</ion-button>
+</ion-footer>

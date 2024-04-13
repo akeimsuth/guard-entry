@@ -1,0 +1,148 @@
+<ion-header>
+    <!-- <ion-toolbar>
+      <ion-title>
+          <div class="title-inner">
+              <h2 class="d-flex">
+                  <ion-icon class="zmdi zmdi-city-alt ion-text-start"></ion-icon> Jackson heights
+              </h2>
+          </div>
+      </ion-title>
+  </ion-toolbar>  -->
+    <div class="form">
+        <ion-item lines="none">
+            <div class="item_inner">
+                <div class="input_box">
+                    <input class="animate__animated animate__fadeInUp ion-text-center" type="text" placeholder="_" #first maxlength="1" size="1" readonly>
+                    <input class="animate__animated animate__fadeInUp ion-text-center" type="text" placeholder="_" #second maxlength="1" size="1" readonly>
+                    <input class="animate__animated animate__fadeInUp ion-text-center" type="text" placeholder="_" #third maxlength="1" size="1" readonly>
+                    <input class="animate__animated animate__fadeInUp ion-text-center" type="text" placeholder="_" #four maxlength="1" size="1" readonly>
+                    <input class="animate__animated animate__fadeInUp ion-text-center" type="text" placeholder="_" #five maxlength="1" size="1" readonly>
+                    <input class="animate__animated animate__fadeInUp ion-text-center" type="text" placeholder="_" #six maxlength="1" size="1" readonly>
+                </div>
+            </div>
+        </ion-item>
+    </div>
+</ion-header>
+
+<ion-content fullscreen class="bg_white">
+    <ion-grid>
+        <ion-row>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn" (click)="enter(1)">1</ion-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn" (click)="enter(2)">2</ion-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn" (click)="enter(3)">3</ion-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn" (click)="enter(4)">4</ion-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn" (click)="enter(5)">5</ion-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn" (click)="enter(6)">6</ion-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn" (click)="enter(7)">7</ion-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn" (click)="enter(8)">8</ion-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn" (click)="enter(9)">9</ion-button>
+            </ion-col>
+
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn QRCodeButton">
+                    <img src="assets/images/icons/ic_qrCode.png">
+                </ion-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn" (click)="enter(0)">0</ion-button>
+            </ion-col>
+            <ion-col size="4" class="animate__animated animate__zoomIn">
+                <ion-button mode="md" shape="round" fill="solid" class="btn" (click)="back()">
+                    <ion-icon class="zmdi zmdi-tag-close"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+    <!-- <div class="add_entry">
+        <h2 class="ion-text-center">
+            {{"add_new_visitor" | translate}}
+        </h2>
+
+        <div class="scroll-x">
+            <div class="scroll_item animate__animated animate__zoomIn" (click)="addGuestEntry()">
+                <div class="text_box">
+                    <h3> Guest</h3>
+                </div>
+                <div class="img_box">
+                    <img src="assets/images/allow/allow_guest.png" class="animate__animated animate__fadeInUp">
+                </div>
+            </div>
+            <div class="scroll_item animate__animated animate__zoomIn" (click)="addDeliverymanEntry()">
+                <div class="text_box">
+                    <h3> Delivery</h3>
+                </div>
+                <div class="img_box">
+                    <img src="assets/images/allow/allow_deliveryman.png" class="animate__animated animate__fadeInUp">
+                </div>
+            </div>
+            <div class="scroll_item animate__animated animate__zoomIn" (click)="addServicemanEntry()">
+                <div class="text_box">
+                    <h3> Service</h3>
+                </div>
+                <div class="img_box">
+                    <img src="assets/images/allow/allow_serviceman.png" class="animate__animated animate__fadeInUp">
+                </div>
+            </div>
+            <div class="scroll_item animate__animated animate__zoomIn" (click)="addCabEntry()">
+                <div class="text_box">
+                    <h3> Cab</h3>
+                </div>
+                <div class="img_box">
+                    <img src="assets/images/allow/allow_cab.png" class="animate__animated animate__fadeInUp">
+                </div>
+            </div>
+            <div class="scroll_item animate__animated animate__zoomIn" (click)="addGuestEntry()">
+                <div class="text_box">
+                    <h3> Guest</h3>
+                </div>
+                <div class="img_box">
+                    <img src="assets/images/allow/allow_guest.png" class="animate__animated animate__fadeInUp">
+                </div>
+            </div>
+            <div class="scroll_item animate__animated animate__zoomIn" (click)="addDeliverymanEntry()">
+                <div class="text_box">
+                    <h3> Delivery</h3>
+                </div>
+                <div class="img_box">
+                    <img src="assets/images/allow/allow_deliveryman.png" class="animate__animated animate__fadeInUp">
+                </div>
+            </div>
+            <div class="scroll_item animate__animated animate__zoomIn" (click)="addServicemanEntry()">
+                <div class="text_box">
+                    <h3> Service</h3>
+                </div>
+                <div class="img_box">
+                    <img src="assets/images/allow/allow_serviceman.png" class="animate__animated animate__fadeInUp">
+                </div>
+            </div>
+            <div class="scroll_item animate__animated animate__zoomIn" (click)="addCabEntry()">
+                <div class="text_box">
+                    <h3> Cab</h3>
+                </div>
+                <div class="img_box">
+                    <img src="assets/images/allow/allow_cab.png" class="animate__animated animate__fadeInUp">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+</ion-content>

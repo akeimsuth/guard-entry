@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+
+    <div class="header_text">
+        <h1 class="animate__animated animate__fadeInUp">
+            {{"profile" | translate}}
+        </h1>
+        <h2 class="animate__animated animate__fadeInUp">
+            {{"everthing_about_you" | translate}}
+        </h2>
+    </div>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+    <div class="form">
+        <div class="profile_img">
+            <div class="img_box center_img">
+                <img src="assets/images/avatars/img8.png" class="crop_img">
+            </div>
+            <ion-icon class="zmdi zmdi-camera"></ion-icon>
+        </div>
+
+        <ion-list lines="none">
+
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner">
+                    <ion-label>{{'full_name' | translate}}</ion-label>
+                    <div class="input_box">
+                        <ion-input type="name" value="Marc Swanson" placeholder="{{'enter_your_full_name' | translate}}" readonly></ion-input>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner">
+                    <ion-label>{{'phone_number' | translate}}</ion-label>
+                    <div class="input_box">
+                        <ion-input type="tel" value="987 654 3210" placeholder="{{'enter_phone_number' | translate}}" readonly></ion-input>
+                    </div>
+                </div>
+            </ion-item>
+
+        </ion-list>
+
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-button size="large" shape="block" fill="solid" mode="md" class="btn animate__animated animate__fadeInUp" (click)="logout()">{{'logout' | translate}}</ion-button>
+</ion-footer>

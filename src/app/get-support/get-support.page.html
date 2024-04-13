@@ -1,0 +1,145 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+
+
+    <div class="header_text">
+        <h1 class="animate__animated animate__fadeInUp">
+            {{"get_support" | translate}}
+        </h1>
+        <h2 class="animate__animated animate__fadeInUp">
+            {{"ask_us_or_suggest_anyway_we_can_improve" | translate}}
+        </h2>
+    </div>
+</ion-header>
+
+<ion-content class="bg_white" fullscreen>
+    <div class="form">
+        <ion-list lines="none">
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner">
+                    <ion-label mode="md" style="display: none;">{{"select_topic" | translate}}</ion-label>
+                    <div class="input_box d-flex">
+                        <ion-select mode="md" placeholder="{{'select_topic' | translate}} / {{'issue_type' | translate}}" cancelText="{{'cancel' | translate}}" okText="{{'ok' | translate}}">
+                            <ion-select-option value="1">Urgency</ion-select-option>
+                            <ion-select-option value="2">Curiosity</ion-select-option>
+                            <ion-select-option value="3">Personalization</ion-select-option>
+                            <ion-select-option value="4">Relevance and Timeliness</ion-select-option>
+                        </ion-select>
+                        <ion-icon class="zmdi zmdi-caret-down  ion-text-end end"></ion-icon>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner">
+                    <div class="input_box">
+                        <ion-textarea rows="3" auto-grow="true" mode="md" type="text" placeholder="{{'enter_your_message' | translate}}"></ion-textarea>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+        <ion-button size="large" shape="block" fill="solid" mode="md" class="btn animate__animated animate__fadeInUp">
+            {{'submit_message' | translate}}</ion-button>
+    </div>
+
+
+    <div class="faqs">
+        <div class="heading">
+            <h2>{{"faqs" | translate}}</h2>
+            <h3>{{"your_question_got_answered" | translate}}</h3>
+        </div>
+        <ion-list lines="none">
+            <ion-item class="animate__animated animate__fadeInUp" [ngClass]="faqExpand1 ? 'active' : '' " (click)="faqExpandToggle1()">
+                <div class="item_inner">
+                    <h3 class="d-flex">How to Lorem ipsum dolor?
+                        <ion-icon class="zmdi zmdi-chevron-down ion-text-center end"></ion-icon>
+                    </h3>
+                    <div class="text_box">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" [ngClass]="faqExpand2 ? 'active' : '' " (click)="faqExpandToggle2()">
+                <div class="item_inner">
+                    <h3 class="d-flex">How to Lorem ipsum dolor?
+                        <ion-icon class="zmdi zmdi-chevron-down ion-text-center end"></ion-icon>
+                    </h3>
+                    <div class="text_box">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" [ngClass]="faqExpand3 ? 'active' : '' " (click)="faqExpandToggle3()">
+                <div class="item_inner">
+                    <h3 class="d-flex">How to Lorem ipsum dolor?
+                        <ion-icon class="zmdi zmdi-chevron-down ion-text-center end"></ion-icon>
+                    </h3>
+                    <div class="text_box">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" [ngClass]="faqExpand4 ? 'active' : '' " (click)="faqExpandToggle4()">
+                <div class="item_inner">
+                    <h3 class="d-flex">How to Lorem ipsum dolor?
+                        <ion-icon class="zmdi zmdi-chevron-down ion-text-center end"></ion-icon>
+                    </h3>
+                    <div class="text_box">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" [ngClass]="faqExpand5 ? 'active' : '' " (click)="faqExpandToggle5()">
+                <div class="item_inner">
+                    <h3 class="d-flex">How to Lorem ipsum dolor?
+                        <ion-icon class="zmdi zmdi-chevron-down ion-text-center end"></ion-icon>
+                    </h3>
+                    <div class="text_box">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" [ngClass]="faqExpand6 ? 'active' : '' " (click)="faqExpandToggle6()">
+                <div class="item_inner">
+                    <h3 class="d-flex">How to Lorem ipsum dolor?
+                        <ion-icon class="zmdi zmdi-chevron-down ion-text-center end"></ion-icon>
+                    </h3>
+                    <div class="text_box">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" [ngClass]="faqExpand7 ? 'active' : '' " (click)="faqExpandToggle7()">
+                <div class="item_inner">
+                    <h3 class="d-flex">How to Lorem ipsum dolor?
+                        <ion-icon class="zmdi zmdi-chevron-down ion-text-center end"></ion-icon>
+                    </h3>
+                    <div class="text_box">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="animate__animated animate__fadeInUp" [ngClass]="faqExpand8 ? 'active' : '' " (click)="faqExpandToggle8()">
+                <div class="item_inner">
+                    <h3 class="d-flex">How to Lorem ipsum dolor?
+                        <ion-icon class="zmdi zmdi-chevron-down ion-text-center end"></ion-icon>
+                    </h3>
+                    <div class="text_box">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

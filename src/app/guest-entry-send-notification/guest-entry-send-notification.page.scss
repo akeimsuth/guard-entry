@@ -1,0 +1,154 @@
+ion-header {
+    background: var(--bg-color);
+    ion-toolbar {
+        --background: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        ion-buttons {
+            padding: 18px 6px 0 6px;
+        }
+        ion-title {
+            .title-inner {
+                min-height: 70px;
+                ion-icon {
+                    color: #80a1b4;
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+    .header_text {
+        align-items: flex-end;
+        padding-top: 60px;
+        min-height: unset;
+        h1 {
+            padding: 0;
+            width: 100%;
+            padding-bottom: 30px;
+        }
+        .img_box {
+            margin: 0 auto;
+            position: relative;
+            width: fit-content;
+            img {
+                display: block;
+                max-height: 155px;
+                margin: 0;
+                max-width: 175px;
+            }
+        }
+    }
+}
+
+.form {
+    padding-top: 40px;
+    width: calc(100% - 50px);
+    ion-item {
+        border-bottom: 0 !important;
+        padding-bottom: 10px;
+        ion-label {
+            font-size: 1.25rem !important;
+            padding-bottom: 2px !important;
+        }
+        ion-input {
+            font-size: 1.5rem !important;
+            font-weight: 600 !important;
+            color: var(--text-dark);
+        }
+        ion-icon {
+            font-size: 1.7rem;
+            min-width: 36px;
+            color: var(--text-light);
+            position: relative;
+            top: -6px;
+        }
+    }
+}
+
+ion-footer {
+    padding: 20px 20px 30px 20px;
+    .button.btn {
+        height: 60px;
+    }
+    &.status {
+        padding: 0;
+        .container {
+            position: relative;
+            padding: 20px 20px 20px 20px;
+            min-height: 300px;
+            &::before {
+                content: '';
+                display: block !important;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: calc(100% - 0px);
+                height: calc(100% - 60px);
+                background: var(--bg-color);
+            }
+            .icon_box {
+                position: relative;
+                z-index: 9;
+                width: fit-content;
+                display: block;
+                margin: 0 auto;
+                padding-bottom: 15px;
+                img {
+                    width: 100px;
+                }
+                .shadow {
+                    position: absolute;
+                    top: 20px;
+                    right: -18px;
+                    filter: blur(15px);
+                    z-index: -1;
+                    opacity: .5;
+                }
+            }
+            .text_box {
+                position: relative;
+                z-index: 99;
+                text-align: center;
+                padding-bottom: 20px;
+                h2 {
+                    margin: 0;
+                    color: var(--text-black);
+                    font-weight: 600;
+                    font-size: 1.45rem;
+                    padding-bottom: 15px;
+                }
+                h3 {
+                    margin: 0;
+                    color: var(--text-light);
+                    font-size: 1.25rem;
+                }
+            }
+            ion-row {
+                width: calc(100% - 15px);
+                margin: 0 auto;
+                ion-col {
+                    padding: 0 10px;
+                    .button.btn {
+                        --background: var(--primary);
+                        height: 55px;
+                        font-size: 1.3rem;
+                        ion-icon {
+                            font-size: 1.6rem;
+                            min-width: 30px;
+                            position: relative;
+                        }
+                        &.button-block {
+                            --border-radius: 50px !important;
+                        }
+                        &.allow {
+                            --background: var(--bg-white);
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

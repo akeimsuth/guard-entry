@@ -1,0 +1,22 @@
+ion-header .header_text {
+    min-height: fit-content;
+    padding-bottom: 20px;
+}
+
+.container {
+    padding: 0 20px;
+    h2 {
+        margin: 0;
+        color: var(--text-dark);
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+    }
+    p {
+        margin: 0;
+        color: var(--text-black);
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 30px;
+        padding-bottom: 25px;
+    }
+}

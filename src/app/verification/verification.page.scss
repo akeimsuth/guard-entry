@@ -1,0 +1,21 @@
+.form {
+    padding-top: 30px;
+    ion-item ion-input {
+        letter-spacing: 3px !important;
+    }
+}
+
+h3 {
+    margin: 0;
+    padding-top: 35px;
+    color: var(--text-light2);
+    font-size: 0.95rem;
+    line-height: 24px;
+    span {
+        color: var(--bg-black);
+        min-width: fit-content;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+    }
+}

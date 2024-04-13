@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+
+    <div class="header_text">
+        <h1 class="animate__animated animate__fadeInUp">
+            {{"verification" | translate}}
+        </h1>
+        <h2 class="animate__animated animate__fadeInUp" innerHTML="{{'enter_verification_code_sent_on_given_number' | translate}}">
+        </h2>
+    </div>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+    <div class="form">
+        <ion-list lines="none">
+            <ion-item lines="none" class="animate__animated animate__fadeInUp">
+                <div class="item_inner">
+                    <ion-label>{{'enter_6_digit_otp' | translate}}</ion-label>
+                    <div class="input_box">
+                        <ion-input type="tel" value="645770" placeholder="{{'enter_6_digit_otp' | translate}}"></ion-input>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+        <ion-button size="large" fill="solid" mode="md" shape="block" class="btn animate__animated animate__fadeInUp" (click)="tabs()">{{'submit' | translate}}</ion-button>
+
+        <h3 class="d-flex animate__animated animate__fadeInUp">
+            0:25 min left
+            <span class="end">{{'resend' | translate}}</span>
+        </h3>
+    </div>
+</ion-content>

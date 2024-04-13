@@ -1,0 +1,105 @@
+<ion-header>
+    <!-- <ion-toolbar>
+    <ion-title>
+        <div class="title-inner">
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-city-alt ion-text-start"></ion-icon> Jackson heights
+            </h2>
+        </div>
+    </ion-title>
+</ion-toolbar>  -->
+</ion-header>
+
+<ion-content fullscreen class="bg_white">
+    <ion-list lines="none">
+        <ion-item class="animate__animated animate__fadeInUp">
+            <div class="item_inner">
+                <div class="item_box d-flex" style="padding-top:0 ;">
+                    <div class="img_box center_img">
+                        <img src="assets/images/avatars/img8.png" class="crop_img">
+                    </div>
+                    <div class="text_box">
+                        <h1>Marc Swanson</h1>
+                        <h4 class="d-flex">{{"on_duty" | translate}}
+
+                            <div *ngIf="config.demoMode" (click)="buyappalert()" class="buy_this_app end">
+                                <h2>
+                                    {{"buy_this_app" | translate}}
+                                </h2>
+                            </div>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </ion-item>
+        <ion-item class="animate__animated animate__fadeInUp" (click)="recentMessages()">
+            <div class="item_inner">
+                <div class="item_box d-flex" style="padding-top:0 ;">
+                    <div class="icon_box" style="background: #566ee7;">
+                        <ion-icon class="zmdi zmdi-email ion-text-center"></ion-icon>
+                    </div>
+                    <h3>{{"messages" | translate}}</h3>
+                    <ion-badge class="end">2</ion-badge>
+                </div>
+            </div>
+        </ion-item>
+        <ion-item class="animate__animated animate__fadeInUp">
+            <div class="item_inner">
+                <h2> {{"quick_contacts" | translate}}</h2>
+
+                <div class="item_box d-flex">
+                    <div class="icon_box" style="background: var(--primary)">
+                        <ion-icon class="zmdi zmdi-account ion-text-center"></ion-icon>
+                    </div>
+                    <h3>{{"call_admin" | translate}}</h3>
+                    <ion-icon class="zmdi zmdi-phone end ion-text-end"></ion-icon>
+                </div>
+                <div class="item_box d-flex">
+                    <div class="icon_box" style="background: var(--primary)">
+                        <ion-icon class="zmdi zmdi-account ion-text-center"></ion-icon>
+                    </div>
+                    <h3>{{"call_secretory" | translate}}</h3>
+                    <ion-icon class="zmdi zmdi-phone end ion-text-end"></ion-icon>
+                </div>
+            </div>
+        </ion-item>
+        <ion-item class="animate__animated animate__fadeInUp">
+            <div class="item_inner">
+                <h2>Appsgate {{"links" | translate}}</h2>
+                <div class="item_box d-flex" (click)="getSupport()">
+                    <div class="icon_box" style="background: #3ec1d2;">
+                        <ion-icon class="zmdi zmdi-email ion-text-center"></ion-icon>
+                    </div>
+                    <h3>{{"support" | translate}}</h3>
+                </div>
+                <div class="item_box d-flex" (click)="termsConditions()">
+                    <div class="icon_box" style="background: #f4b93e;">
+                        <ion-icon class="zmdi zmdi-assignment ion-text-center"></ion-icon>
+                    </div>
+                    <h3>{{"terms_conditions" | translate}}</h3>
+                </div>
+                <div class="item_box d-flex" (click)="changeLanguage()">
+                    <div class="icon_box" style="background: #34166c;">
+                        <ion-icon class="zmdi zmdi-translate ion-text-center"></ion-icon>
+                    </div>
+                    <h3>{{"change_language" | translate}}</h3>
+                </div>
+                <div class="item_box d-flex" (click)="signIn()">
+                    <div class="icon_box" style="background: #e26141;">
+                        <ion-icon class="zmdi zmdi-open-in-new ion-text-center"></ion-icon>
+                    </div>
+                    <h3>{{"logout" | translate}}</h3>
+                </div>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <div class="developed_by d-flex animate__animated animate__fadeInUp" (click)="developed_by()" *ngIf="config.demoMode">
+        <h2>{{"developed_by" | translate}}</h2>
+        <div class="img_box end">
+            <img src="assets/images/opus_labs.png">
+        </div>
+    </div>
+</ion-footer>

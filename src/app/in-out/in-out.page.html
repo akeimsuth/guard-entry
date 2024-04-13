@@ -1,0 +1,398 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            <div class="title-inner d-flex">
+                <ion-segment mode="ios" (ionChange)="segmentChanged()" [(ngModel)]="segment" lines="none">
+                    <ion-segment-button value="0">
+                        <ion-label>
+                            {{"waiting" | translate}} (3)
+                        </ion-label>
+                    </ion-segment-button>
+
+                    <ion-segment-button value="1">
+                        <ion-label>
+                            {{"inside" | translate}} (12)
+                        </ion-label>
+                    </ion-segment-button>
+                </ion-segment>
+            </div>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen class="bg_white">
+    <ion-slides #slides (ionSlideDidChange)="slideChanged()">
+        <!-- Watting section start -->
+        <ion-slide>
+            <ion-list lines="none">
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_serviceman.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Peterson Duke
+                                </h2>
+                                <h3>Service <span>&nbsp;</span> B 302</h3>
+                            </div>
+
+                            <div class="status end in">
+                                <span>{{"in" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_deliveryman.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Lissa Fernandis
+                                </h2>
+                                <h3>Delivery <span>&nbsp;</span> B 308</h3>
+                            </div>
+
+                            <div class="status end watting">
+                                <ion-icon class="zmdi zmdi-time"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_guest.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Angelina Haydon
+                                </h2>
+                                <h3>Guest <span>&nbsp;</span> A 205</h3>
+                            </div>
+
+                            <div class="status end in">
+                                <span>{{"in" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_serviceman.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Peterson Duke
+                                </h2>
+                                <h3>Service <span>&nbsp;</span> B 302</h3>
+                            </div>
+
+                            <div class="status end in">
+                                <span>{{"in" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_deliveryman.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Lissa Fernandis
+                                </h2>
+                                <h3>Delivery <span>&nbsp;</span> B 308</h3>
+                            </div>
+                            <div class="status end watting">
+                                <ion-icon class="zmdi zmdi-time"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </ion-slide>
+        <!-- Watting section end -->
+
+
+        <!-- Inside section start -->
+        <ion-slide>
+            <ion-list lines="none">
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_guest.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Angelina Haydon
+                                </h2>
+                                <h3>Guest <span>&nbsp;</span> A 205</h3>
+                            </div>
+
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_serviceman.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Jeccisa Roy
+                                </h2>
+                                <h3>Service <span>&nbsp;</span> B 302</h3>
+                            </div>
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_deliveryman.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Rasel Taylor
+                                </h2>
+                                <h3>Delivery <span>&nbsp;</span> B 308</h3>
+                            </div>
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_cab.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Anny Jackson
+                                </h2>
+                                <h3>Cab 4425 <span>&nbsp;</span> B 106</h3>
+                            </div>
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_guest.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Andrew Brews
+                                </h2>
+                                <h3>Guest <span>&nbsp;</span> A 205</h3>
+                            </div>
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_deliveryman.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Reena Patel
+                                </h2>
+                                <h3>Delivery <span>&nbsp;</span> A 202</h3>
+                            </div>
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_guest.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Angelina Haydon
+                                </h2>
+                                <h3>Guest <span>&nbsp;</span> A 205</h3>
+                            </div>
+
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_serviceman.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Jeccisa Roy
+                                </h2>
+                                <h3>Service <span>&nbsp;</span> B 302</h3>
+                            </div>
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_deliveryman.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Rasel Taylor
+                                </h2>
+                                <h3>Delivery <span>&nbsp;</span> B 308</h3>
+                            </div>
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_cab.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Anny Jackson
+                                </h2>
+                                <h3>Cab 4425 <span>&nbsp;</span> B 106</h3>
+                            </div>
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_guest.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Andrew Brews
+                                </h2>
+                                <h3>Guest <span>&nbsp;</span> A 205</h3>
+                            </div>
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item class="animate__animated animate__fadeInUp">
+                    <div class="item_inner">
+                        <div class="profile_box  d-flex">
+                            <div class="img_container">
+                                <div class="img_box center_img">
+                                    <img src="assets/images/allow/allow_deliveryman.png">
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <h2>
+                                    Reena Patel
+                                </h2>
+                                <h3>Delivery <span>&nbsp;</span> A 202</h3>
+                            </div>
+                            <div class="status end out">
+                                <span>{{"out" | translate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </ion-slide>
+        <!-- Inside section end -->
+    </ion-slides>
+</ion-content>
